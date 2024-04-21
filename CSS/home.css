@@ -1,0 +1,210 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#navbar{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(228, 228, 228);
+    padding: 10px 30px;
+    box-shadow: 2px 2px 15px;
+}
+#navbar img{
+    width: 100px;
+    height: auto;
+    margin-left: 30px;
+}
+#navbar  ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin-right: 30px;
+}
+#navbar ul li{
+    padding: 10px 20px;
+}
+#navbar ul li a{
+    text-decoration: none;
+    font-size: 22px;
+    color: gray;
+    transition: .5s all;
+}
+#navbar ul li a:hover{
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+/*Home section*/
+#home_section{
+    width: 100%;
+    height: 80vh;
+    background-image: url('../Images/home_ng.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#home_section #home_info{
+    width: 50%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+}
+#home_section #home_info img{
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+#home_section #home_info h1{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: black;
+    text-shadow: 2px 3px 10px;
+}
+#home_section #home_info p{
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+#home_section #home_info button{
+    width: 180px;
+    height: auto;
+    font-size: 18px;
+    padding: 10px 25px;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: aquamarine;
+    color: black;
+    box-shadow: 2px 5px 15px aqua;
+    transition: .5s all;
+}
+#home_section #home_info button:hover{
+    background-image: linear-gradient(to right , aquamarine , aqua);
+    cursor: pointer;
+}
+
+/*Services section*/
+#services{
+    width: 100%;
+    height: auto;
+    display: grid;
+    place-items: center;
+    padding: 10px;
+}
+#services h1{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#services p{
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 2px 50px;
+}
+#services #service_container{
+    width: 95%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+#services #service_container .actual_service{
+    width: 30%;
+    height: auto;
+    padding: 10px;
+    display: grid;
+    place-items: center;
+    background-color: rgb(213, 211, 211);
+    box-shadow: 2px 3px 10px;
+    border-radius: 10px;
+}
+#services #service_container .actual_service img{
+    width: 80px;
+    height: auto;
+    margin-bottom: 20px;
+}
+#services #service_container .actual_service h3{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#services #service_container .actual_service p{
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#services #service_container .actual_service a{
+    text-decoration: none;
+    color: gray;
+    border-bottom: 1px solid gray;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*Home contact Section*/
+#home_contact{
+    width: 100%;
+    height: 80vh;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#home_contact #contact_container{
+    width: 45%;
+    height: 100%;
+    padding: 20px;
+    display: grid;
+    place-content: center;
+    margin: 5px auto;
+}
+#home_contact #contact_container h1{
+    font-size: 40px;
+    color: black;
+    margin-bottom: 20px;
+}
+#home_contact #contact_container p{
+    font-size: 18px;
+    color: black;
+    margin-bottom: 20px;
+}
+#home_contact #contact_container p ion-icon{
+    font-size: 18px;
+}
+#home_contact #map_container{
+    width: 45%;
+    height: 100%;
+    padding: 20px;
+    display: block;
+    margin: 5px auto;
+}
+#home_contact #map_container iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.copyright {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    font-size: 14px;
+  }
